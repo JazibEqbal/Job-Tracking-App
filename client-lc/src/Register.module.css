@@ -1,0 +1,90 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.register__conatiner {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  min-width: 350px;
+  border-radius: 5px;
+  border-top: 3px solid #14919b;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 150px;
+  z-index: 1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.register__conatiner:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: 300ms ease-in-out all;
+}
+.register__form {
+  display: flex;
+  flex-direction: column;
+}
+.register__logo {
+  object-fit: contain;
+  width: 120px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.register__h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 1.75;
+  color: rgb(52, 51, 51);
+  font-family: "Cabin", Sans-Serif;
+  font-size: 24px;
+}
+.register__button {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #14919b;
+  padding: 8px 16px;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  height: 35px;
+  letter-spacing: 1px;
+  overflow: visible;
+  font-family: "Cabin", Sans-Serif;
+  font-size: 100%;
+  line-height: 1.15;
+}
+.register__button:hover {
+  background-color: #0e7c86;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: 300ms ease-in-out all;
+}
+.register__p {
+  color: rgb(52, 51, 51);
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.15;
+  margin-top: 0.8rem;
+  font-size: 95%;
+}
+.register__b {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  color: #14919b;
+  letter-spacing: 1px;
+  overflow: visible;
+  font-family: "Cabin", Sans-Serif;
+}
+.register__b:hover{
+  text-decoration: underline;
+}

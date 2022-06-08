@@ -1,0 +1,15 @@
+.numberOfJobs{
+    font-size: 24px;
+    color: #2cb1bc;
+    font-weight: 500;
+    margin-left: 45px;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+.noJobs{
+    font-size: 24px;
+    color: #2cb1bc;
+    font-weight: 500;
+    margin-left: 45px;
+    margin-bottom: 30px;
+}

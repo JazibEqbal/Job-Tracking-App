@@ -1,0 +1,71 @@
+.sideBar{
+    display: none;
+}
+
+@media only screen and (min-width: 990px){
+.sideBar{
+    display: flex;
+    box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    background: #fff;
+    height: 100%;
+    min-height: 100vh;
+    width: 215px;
+    transition: 300ms ease-in-out all;
+    position: sticky;
+    top:0;
+    }
+    .sideBar__logo{
+        object-fit: contain;
+        width: 120px;
+    }
+    .content {
+        position: sticky;
+        top: 0;
+      }
+      .show__sideBar {
+        margin-left: 0;
+      }
+      .head {
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2.5rem;
+      }
+      .bigsideBarLinks{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+      }
+      .bigBarLinks {
+        display: flex;
+        align-items: center;
+        color: #627d98;;
+        padding: 1rem 0;
+        text-transform: capitalize;
+        transition: 300ms ease-in-out all;
+        text-decoration: none;
+      }
+      .bigBarLinks:hover {
+        color: #102a43;
+      }
+      .bigBarLinks:hover .icon {
+        color: #2cb1bc;;
+      }
+      .icon {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        display: grid;
+        place-items: center;
+        transition: 300ms ease-in-out all;
+      }
+      .active {
+        color: #102a43;
+      }
+      .active .icon {
+        color: #2cb1bc;
+      }
+}

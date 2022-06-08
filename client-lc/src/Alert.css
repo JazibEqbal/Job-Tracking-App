@@ -1,0 +1,19 @@
+.alert {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: 2px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.alert__danger {
+  background-color: #D0342C;
+  color: #fff;
+  padding: 0.35rem 0.75rem;
+}
+.alert__success {
+  background-color: #4BB543;
+  color: #fff;
+  padding: 0.35rem 0.75rem;
+}

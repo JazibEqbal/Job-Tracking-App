@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  left: 0;
+  height: 6rem;
+  margin-left: auto;
+  background-color: #fff;
+  -webkit-box-align: center;
+   align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  box-shadow: rgb(0 ,0 ,0 ,0.1) 0px 1px 0px 0px;
+  width: 87vw;
+}
+.navbar__header{
+  font-size: 1.95rem;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Roboto Condensed",Sans-Serif;
+  margin-left: 600px;
+  margin-right: -400px;
+  color: rgb(72, 101, 129);
+}
+.navbar__profileContainer{
+  display: flex;
+  position: relative;
+  margin-right: 70px;
+}
+.navbar__dropdownButton{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 0px 0.5rem;
+    position: relative;
+    box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    cursor: pointer;
+    background-color: #2cb1bc;
+    color: #fff;
+    border: transparent;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    line-height: 1.15;
+    text-transform: capitalize;
+    overflow: visible;
+    font-family: inherit;
+    padding: 0.3rem;
+    font-size: 18px;
+}
+.navbar__dropdownButton:hover{
+  background-color: #0e7c86;
+  transition: transform 400ms ease-in-out all;
+  transform: scale(1.01);
+}
+.logout{
+  display: block;
+  position: absolute;
+    top: 33px;
+    left: 0px;
+    width: 100%;
+    background: #bef8fd;
+    box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    text-align: center;
+    border-radius: 3px;
+    font-family: "Cabin",Sans-Serif;
+    padding: 0.07rem;
+    visibility: hidden;
+}
+.show__logout{
+  visibility: visible;
+}
+.navbar__logoutButton{
+  background: transparent;
+  border-color: transparent;
+  color: #2cb1bc;
+  letter-spacing:1px;
+  text-transform: capitalize;
+  cursor: pointer;
+  overflow: visible;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.1rem;
+}
+@media only screen and (max-width: 990px){
+   .navbar{
+      width: 100vw;
+      margin: 0;
+    }
+    .navbar__header{
+     margin-left: -35px;
+     font-size: 1.75rem;
+    }
+    .navbar__profileContainer{
+      margin-right: 20px;
+    }
+    .navbar__dropdownButton{
+      font-size: 16px;
+      margin-right: 5px;
+    }
+    .navbar__ToggleButton{
+      background: transparent;
+      border-color: transparent;
+      font-size: 1.75rem;
+      color: #2cb1bc;
+      cursor: pointer;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      overflow: visible;
+    }
+    .navbar__ToggleButton:hover{
+      color: #0e7c86;
+      transition: transform 400ms ease-in-out;
+      transform: scale(1.01);
+    }
+}
+@media only screen and (min-width: 992px) {
+  .navbar__ToggleButton{
+    display: none;
+  }
+}

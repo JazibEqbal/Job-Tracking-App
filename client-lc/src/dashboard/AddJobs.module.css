@@ -1,0 +1,99 @@
+.addJobs{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.addJobs:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: 300ms ease-in-out all;
+}
+.addJobs__header{
+    color: rgb(72, 101, 129);
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.addJobsForm{
+  display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem; 
+    width: 350px;
+    min-width: 300px;
+}
+.addJobs__formContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem; 
+    width: 350px;
+    min-width: 300px;
+}
+.addJobs__button{
+    width: 150px;
+    min-width: 130px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    gap: 0px 0.5rem;
+    box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    cursor: pointer;
+    background-color: #2cb1bc;
+    color: #fff;
+    border: transparent;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    line-height: 1.15;
+    text-transform: capitalize;
+    overflow: visible;
+    font-family: inherit;
+    padding: 0.3rem;
+    font-size: 18px;
+    margin-top: 7px;
+}
+.addJobs__button:hover{
+    background-color: #0e7c86;
+    transition: transform 400ms ease-in-out all;
+    transform: scale(1.01);
+  }
+.addJobs__Clearbutton{
+    display: block;
+    width: 150px;
+    min-width: 130px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    gap: 0px 0.5rem;
+    box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    cursor: pointer;
+    margin-top: -39px;
+    margin-left: 195px;
+    color: #fff;
+    border: transparent;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    line-height: 1.15;
+    text-transform: capitalize;
+    overflow: visible;
+    font-family: inherit;
+    padding: 0.3rem;
+    font-size: 18px;
+    background-color: #D0342C;
+  }
+.addJobs__Clearbutton:hover{
+    background-color: #842029;;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: 300ms ease-in-out all;
+  }
+
+  @media only screen and (max-width: 990px){
+     .addJobs {
+      margin: 20px 40px 20px 20px;
+      padding: 20px;
+     }
+  }

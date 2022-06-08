@@ -1,0 +1,120 @@
+.landing {
+  display: flex;
+  margin-left: 50px;
+  height: 100vh;
+  width: 100vw;
+}
+nav {
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  margin-left: 90px;
+}
+.landing__logo {
+  object-fit: contain;
+  width: 120px;
+  margin-left: 30px;
+}
+.container {
+  display: flex;
+  margin-top: 6rem;
+}
+.container__left {
+  display: flex;
+  flex-direction: column;
+  flex: 0.4;
+  margin-top: 5.5rem;
+  margin-left: -105px;
+  justify-content: left;
+}
+.container__left > h2 {
+  color: rgb(52, 51, 51);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.container__left > h2 > span {
+  color: #14919b;
+}
+.container__left > p {
+  display: block;
+  font-size: 16px;
+  color: rgb(72, 101, 129);
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.registerLink_button{
+  display:contents;
+}
+.registerLink_button > button {
+  margin-top: 40px;
+  padding: 8px 16px;
+  background-color: #2cb1bc;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  max-width: 170px;
+  min-width: 150px;
+}
+.registerLink_button > button:hover {
+  background-color: #0e7c86;
+  transition: transform 400ms ease-in-out;
+  transform: scale(1.01);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.container__right {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  margin-top: 3rem;
+  align-items: center;
+}
+.landingImage {
+  object-fit: contain;
+  width: 100%;
+  height: 590px;
+}
+.copyright{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  color: rgb(72, 101, 129);
+  opacity: 0.8;
+  font-weight: 400;
+}
+.owner{
+  margin-left: 5px;
+  margin-top: -1.5px;
+  color: #2cb1bc;
+}
+/* MOBILE RESPONSIVE */
+
+@media only screen and (max-width: 990px) {
+  .landing {
+    width: 90vw;
+    margin-left: 0;
+  }
+  nav {
+    margin-left: -30px;
+  }
+  .container__left {
+    flex: 0.9;
+    width: 100vw;
+    height: 50vh;
+  }
+  .container__left > button {
+    font-size: 1rem;
+    min-width: 150px;
+    margin-top: 60px;
+  }
+  .container__right {
+    display: none;
+  }
+}

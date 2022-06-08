@@ -1,0 +1,100 @@
+.allJobs{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* position: sticky;
+    top: 0; */
+}
+.allJobs:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: 300ms ease-in-out all;
+}
+.allJobs__header{
+    color: rgb(72, 101, 129);
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.allJobsForm{
+  display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    width: 350px;
+    min-width: 300px;
+}
+.allJobs__formContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem; 
+    width: 350px;
+    min-width: 300px;
+}
+.allJobs__button{
+    width: 150px;
+    min-width: 130px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    gap: 0px 0.5rem;
+    box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    cursor: pointer;
+    background-color: #2cb1bc;
+    color: #fff;
+    border: transparent;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    line-height: 1.15;
+    text-transform: capitalize;
+    overflow: visible;
+    font-family: inherit;
+    padding: 0.3rem;
+    font-size: 18px;
+    margin-top: 7px;
+}
+.allJobs__button:hover{
+    background-color: #0e7c86;
+    transition: transform 400ms ease-in-out all;
+    transform: scale(1.01);
+  }
+.allJobs__Clearbutton{
+    display: block;
+    width: 150px;
+    min-width: 130px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    gap: 0px 0.5rem;
+    box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    border: transparent;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    line-height: 1.15;
+    text-transform: capitalize;
+    overflow: visible;
+    font-family: inherit;
+    padding: 0.3rem;
+    font-size: 18px;
+    background-color: #D0342C;
+  }
+.allJobs__Clearbutton:hover{
+    background-color: #842029;
+    color: #fff;
+    transition: transform 400ms ease-in-out all;
+    transform: scale(1.01);
+  }
+  @media only screen and (max-width: 990px){
+    .allJobs {
+     margin: 20px 30px 20px 15px;
+     padding: 20px;
+    }
+ }

@@ -1,0 +1,44 @@
+.ChartContainer{
+    margin-left: 40px;
+}
+.headingChart{
+  color: #2cb1bc;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.toggleChartButtom{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 150px;
+    min-width: 130px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    gap: 0px 0.5rem;
+    cursor: pointer;
+    color: #2cb1bc;
+    border: transparent;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    overflow: visible;
+    font-family: inherit;
+    padding: 0.3rem;
+    font-size: 18px;
+    margin-top: 7px;
+    background-color: #f0f4f8;
+}
+.toggleChartButtom:hover{
+    transition: transform 400ms ease-in-out ;
+    transform: scale(1.08);
+    text-decoration:underline;
+}
+
+@media only screen and (max-width: 990px) {
+    .ChartContainer{
+        margin-left: 20px;
+    }
+    .headingChart{
+        font-size: 16px;
+    }
+}

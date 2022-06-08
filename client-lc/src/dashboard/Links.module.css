@@ -1,0 +1,14 @@
+.addJobsLink{
+    margin-left: 11px;
+}
+.StatsLink{
+    margin-left: -13px;
+}
+@media only screen and (max-width: 990px){
+    .addJobsLink{
+        margin-left: 0;
+    }
+    .StatsLink{
+        margin-left: 0;
+    }
+}

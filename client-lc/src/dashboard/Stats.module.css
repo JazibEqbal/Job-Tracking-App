@@ -1,0 +1,70 @@
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+.pendingApplications,
+.interviewApplications,
+.declinedApplications{
+    display: flex;
+    width: 400px !important;
+    height: 200px !important;
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.pendingApplications:hover,
+.interviewApplications:hover,
+.declinedApplications:hover{
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: 300ms ease-in-out all;
+}
+.innerContainer{
+    padding: 40px;
+}
+.iconSize{
+    display: block;
+    margin-left: 250px;
+    font-size: 60px;
+    align-items: center;
+}
+.pendingIcon,
+.pendingCount,
+.pendingStatus{
+    color: rgb(223, 142, 37);
+}
+.interviewIcon,
+.interviewCount,
+.interviewStatus{
+    color: #4BB543;
+}
+.declinedIcon,
+.declineCount,
+.declinedStatus{
+    color: #cf0606;
+}
+.numberCount{
+
+}
+
+@media only screen and (max-width: 990px){
+    .stats{
+        display: flex;
+        flex-direction: column;
+    }
+.pendingApplications,
+.interviewApplications,
+.declinedApplications{
+    display: flex;
+    flex-direction: column;
+    width: 460px !important;
+    margin-top: 20px;
+    margin-left: 11px;
+}
+.iconSize{
+    margin-left: 310px;
+}
+}
