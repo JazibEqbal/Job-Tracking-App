@@ -16,6 +16,8 @@
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   transition: 300ms ease-in-out all;
+  border-top: 3px solid #14919b;
+  border-width: 7px;
 }
 .allJobs__header{
     color: rgb(72, 101, 129);

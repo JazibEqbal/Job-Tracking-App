@@ -10,7 +10,6 @@ const auth = async (req, res, next) => {
       msg: "Access Denied!",
     });
   }
-
   try {
     const token = authHeader.split(" ")[1];
     const payload = jwt.verify(token, process.env.JWT_SECRET);

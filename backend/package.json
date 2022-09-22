@@ -9,7 +9,7 @@
     "build-client": "cd .. && cd client-lc && npm run build",
     "server": "nodemon server --ignore client-lc",
     "client": "npm start --prefix client-lc",
-    "start" : "concurrently --kill-oters-on-fail \" npm run server\" \"npm run client-lc\"",
+    "start" : "concurrently --kill-others-on-fail \" npm run server\" \"npm run client-lc\"",
     "install-client": "cd .. && client-lc && npm install",
     "heroku-postbuild": "npm run install-client && npm run build-client"
   },

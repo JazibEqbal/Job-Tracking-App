@@ -10,9 +10,9 @@ import morgan from "morgan";
 import auth from "./middleware/auth.js";
 
 //PROFUCTION READY
+import path from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import path from "path";
 
 //SECURING SERVER
 import helmet from "helmet";
@@ -23,8 +23,8 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 //
-const __dirname = dirname(fileURLToPath(import.meta.url));
-app.use(express.static(path.resolve(__dirname, "../client-lc/build")));
+// const __dirname = dirname(fileURLToPath(import.meta.url));
+// app.use(express.static(path.resolve(__dirname, "../client-lc/build")));
 
 //SECURING SERVER
 app.use(helmet());
@@ -39,9 +39,9 @@ if (process.env.NODE_ENV !== "production") {
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/jobs", auth, jobRouter);
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../client-lc/build", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../client-lc/build", "index.html"));
+// });
 
 app.use(notFoundMiddleware);
 app.use(errorHandleMiddleware);

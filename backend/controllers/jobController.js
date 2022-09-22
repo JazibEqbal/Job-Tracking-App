@@ -3,6 +3,8 @@ import checkPermissions from "../middleware/checkPermissions.js";
 import Job from "../models/Jobs.js";
 import mongoose from "mongoose";
 import moment from "moment";
+
+//creating a job
 const craeteJob = async (req, res) => {
   const { position, company } = req.body;
   if (!position || !company) {
@@ -15,7 +17,6 @@ const craeteJob = async (req, res) => {
   res.status(StatusCodes.CREATED).json({ job });
   //res.send("create job");
 };
-//
 //GET ALL JOBS
 const getAllJobs = async (req, res) => {
   //QUERY ONE WAY
@@ -100,7 +101,6 @@ const updateJob = async (req, res) => {
   // await job.save();
   // res.status(StatusCodes.OK).json({ job });
 };
-
 //DELETE JOB
 const deleteJob = async (req, res) => {
   const { id: jobId } = req.params;
@@ -116,6 +116,7 @@ const deleteJob = async (req, res) => {
   //res.send("delete job");
 };
 //
+
 //STATS
 const showStats = async (req, res) => {
   //AGGREGRATION PIPELINE
